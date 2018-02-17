@@ -125,9 +125,7 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 21300004, guid: 56cccbc8ce1d23d45972a373e725b7be, type: 3}
-    - time: 0.083333336
-      value: {fileID: 21300004, guid: 56cccbc8ce1d23d45972a373e725b7be, type: 3}
+      value: {fileID: 21300002, guid: 56cccbc8ce1d23d45972a373e725b7be, type: 3}
     attribute: m_Sprite
     path: Clothes Top
     classID: 212
@@ -225,8 +223,7 @@ AnimationClip:
     - {fileID: 21300046, guid: 4c6d28601b50c9840ad234edcefa2aee, type: 3}
     - {fileID: 21300056, guid: 4c6d28601b50c9840ad234edcefa2aee, type: 3}
     - {fileID: 21300056, guid: 4c6d28601b50c9840ad234edcefa2aee, type: 3}
-    - {fileID: 21300004, guid: 56cccbc8ce1d23d45972a373e725b7be, type: 3}
-    - {fileID: 21300004, guid: 56cccbc8ce1d23d45972a373e725b7be, type: 3}
+    - {fileID: 21300002, guid: 56cccbc8ce1d23d45972a373e725b7be, type: 3}
     - {fileID: 21300074, guid: 4c6d28601b50c9840ad234edcefa2aee, type: 3}
     - {fileID: 21300074, guid: 4c6d28601b50c9840ad234edcefa2aee, type: 3}
     - {fileID: 21300002, guid: 1e8769446d9d29d4bbb37660099292ca, type: 3}
