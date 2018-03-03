@@ -1,19 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PlayerInputController : MonoBehaviour
 {
     private const string HORIZONTAL_AXIS = "Horizontal";
     private const string VERTICAL_AXIS = "Vertical";
-    private const float MOVEMENT_THRESHOLD = 0f;
+    [SerializeField] private float _movementThreshold = 0f;
+    [SerializeField] private CardinalMovementHandler[] _movementHandlers;
 
     private CardinalDirection _lastDirection = CardinalDirection.South;
-    private ICardinalMovementHandler[] _movementHandlers;
-
-    private void Start()
-    {
-        _movementHandlers = GetComponents<ICardinalMovementHandler>();
-    }
 
     // Update is called once per frame
     private void Update()
@@ -27,7 +21,6 @@ public class PlayerInputController : MonoBehaviour
         var yAxis = Input.GetAxis(VERTICAL_AXIS);
         var shouldMoveHorizontal = ShouldMoveOnAxis(xAxis);
         var shouldMoveVertical = ShouldMoveOnAxis(yAxis);
-        Debug.Log(xAxis + ", " + yAxis);
         if(!shouldMoveHorizontal)
         {
             xAxis = 0f;
@@ -72,7 +65,7 @@ public class PlayerInputController : MonoBehaviour
 
     private void PropagateMovement(CardinalDirection direction, float xAxis, float yAxis)
     {
-        Debug.Log("Propagating " + direction.ToString() + " x " + xAxis + " y " + yAxis);
+        //Debug.Log("Propagating " + direction.ToString() + " x " + xAxis + " y " + yAxis);
         foreach(var handler in _movementHandlers)
         {
             handler.HandleMovement(direction, xAxis, yAxis);
@@ -82,6 +75,11 @@ public class PlayerInputController : MonoBehaviour
 
     private bool ShouldMoveOnAxis(float axis)
     {
-        return Mathf.Abs(axis) > MOVEMENT_THRESHOLD;
+        return Mathf.Abs(axis) > _movementThreshold;
+    }
+
+    private void Reset()
+    {
+        _movementHandlers = GetComponents<CardinalMovementHandler>();
     }
 }

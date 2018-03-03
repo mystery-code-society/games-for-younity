@@ -1,15 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerAnimationView : MonoBehaviour, ICardinalMovementHandler
+public class PlayerAnimationView : CardinalMovementHandler
 {
     private const string WALK_PREFIX = "Walk";
 
     [SerializeField] private Animator _animator;
     private CardinalDirection _lastDirection = CardinalDirection.South;
 
-    public void HandleMovement(CardinalDirection direction, float xMovement, float yMovement)
+    public override void HandleMovement(CardinalDirection direction, float xMovement, float yMovement)
     {
         if(direction != _lastDirection)
         {
