@@ -65,10 +65,12 @@ public class PlayerInputController : MonoBehaviour
 
     private void PropagateMovement(CardinalDirection direction, float xAxis, float yAxis)
     {
+        var v = new Vector2(xAxis, yAxis);
+        v = Vector2.ClampMagnitude(v, 1f);
         //Debug.Log("Propagating " + direction.ToString() + " x " + xAxis + " y " + yAxis);
         foreach(var handler in _movementHandlers)
         {
-            handler.HandleMovement(direction, xAxis, yAxis);
+            handler.HandleMovement(direction, v.x, v.y);
         }
         _lastDirection = direction;
     }

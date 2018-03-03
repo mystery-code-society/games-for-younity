@@ -281,7 +281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 95815610006240082}
-  Speed: 0
 --- !u!114 &114632950150022890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -293,8 +292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c3ef50766265a43bcf95a91c0d16e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _horizontalAxis: Horizontal
-  _verticalAxis: Vertical
   _movementThreshold: 0
   _movementHandlers:
   - {fileID: 114577254102105136}
