@@ -6,6 +6,12 @@ public class PlayerAnimationView : CardinalMovementHandler
 
     [SerializeField] private Animator _animator;
     private CardinalDirection _lastDirection = CardinalDirection.South;
+    public float Speed;
+
+    private void Awake()
+    {
+        _animator.speed = Speed;
+    }
 
     public override void HandleMovement(CardinalDirection direction, float xMovement, float yMovement)
     {
