@@ -22,6 +22,24 @@ TextureImporter:
     21300030: plowed_soil_15
     21300032: plowed_soil_16
     21300034: plowed_soil_17
+    21300036: soil_0
+    21300038: soil_1
+    21300040: soil_2
+    21300042: soil_3
+    21300044: soil_4
+    21300046: soil_5
+    21300048: soil_6
+    21300050: soil_7
+    21300052: soil_8
+    21300054: soil_9
+    21300056: soil_10
+    21300058: soil_11
+    21300060: soil_12
+    21300062: soil_13
+    21300064: soil_14
+    21300066: soil_15
+    21300068: soil_16
+    21300070: soil_17
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -118,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plowed_soil_0
+      name: soil_0
       rect:
         serializedVersion: 2
         x: 0
@@ -132,7 +150,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_1
+      name: soil_1
       rect:
         serializedVersion: 2
         x: 32
@@ -146,7 +164,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_2
+      name: soil_2
       rect:
         serializedVersion: 2
         x: 64
@@ -160,7 +178,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_3
+      name: soil_3
       rect:
         serializedVersion: 2
         x: 0
@@ -174,7 +192,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_4
+      name: soil_4
       rect:
         serializedVersion: 2
         x: 32
@@ -188,7 +206,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_5
+      name: soil_5
       rect:
         serializedVersion: 2
         x: 64
@@ -202,7 +220,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_6
+      name: soil_6
       rect:
         serializedVersion: 2
         x: 0
@@ -216,7 +234,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_7
+      name: soil_7
       rect:
         serializedVersion: 2
         x: 32
@@ -230,7 +248,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_8
+      name: soil_8
       rect:
         serializedVersion: 2
         x: 64
@@ -244,7 +262,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_9
+      name: soil_9
       rect:
         serializedVersion: 2
         x: 0
@@ -258,7 +276,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_10
+      name: soil_10
       rect:
         serializedVersion: 2
         x: 32
@@ -272,7 +290,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_11
+      name: soil_11
       rect:
         serializedVersion: 2
         x: 64
@@ -286,7 +304,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_12
+      name: soil_12
       rect:
         serializedVersion: 2
         x: 0
@@ -300,7 +318,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_13
+      name: soil_13
       rect:
         serializedVersion: 2
         x: 32
@@ -314,7 +332,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_14
+      name: soil_14
       rect:
         serializedVersion: 2
         x: 64
@@ -328,7 +346,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_15
+      name: soil_15
       rect:
         serializedVersion: 2
         x: 0
@@ -342,7 +360,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_16
+      name: soil_16
       rect:
         serializedVersion: 2
         x: 32
@@ -356,7 +374,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: plowed_soil_17
+      name: soil_17
       rect:
         serializedVersion: 2
         x: 64
