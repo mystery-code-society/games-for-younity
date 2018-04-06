@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
@@ -6,17 +7,33 @@ public class PlayerInputController : MonoBehaviour
     private const string VERTICAL_AXIS = "Vertical";
     [SerializeField] private float _movementThreshold = 0f;
     [SerializeField] private CardinalMovementHandler[] _movementHandlers;
+    [SerializeField] private PlayerActionController _actionController;
 
     private CardinalDirection _lastDirection = CardinalDirection.South;
+    private bool _inputAllowed = true;
 
     // Update is called once per frame
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(_inputAllowed)
         {
-            Debug.Log("Tilling, tilling, tilling!");
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                _inputAllowed = false;
+                StartCoroutine(WaitForOverridingActionToBeDone(0.5f));
+                _actionController.TillTheSoil();
+            }
+            else
+            {
+                HandleMovementInput();
+            }
         }
-        HandleMovementInput();
+    }
+
+    private IEnumerator WaitForOverridingActionToBeDone(float actionLength)
+    {
+        yield return new WaitForSeconds(actionLength);
+        _inputAllowed = true;
     }
 
     private void HandleMovementInput()

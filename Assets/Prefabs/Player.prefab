@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 114632950150022890}
   - component: {fileID: 114577254102105136}
   - component: {fileID: 114958598789837680}
+  - component: {fileID: 114123224054209210}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -296,6 +297,18 @@ MonoBehaviour:
   _mySkinTone: 0
   _skinSprites:
   - {fileID: 212829245560166386}
+--- !u!114 &114123224054209210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649025375864904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d963a93debfae41a998414ccf5adc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soilMap: {fileID: 0}
 --- !u!114 &114577254102105136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -324,6 +337,7 @@ MonoBehaviour:
   _movementHandlers:
   - {fileID: 114577254102105136}
   - {fileID: 114958598789837680}
+  _actionController: {fileID: 114123224054209210}
 --- !u!114 &114958598789837680
 MonoBehaviour:
   m_ObjectHideFlags: 1
