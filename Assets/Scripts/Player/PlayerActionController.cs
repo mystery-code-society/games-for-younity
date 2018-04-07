@@ -11,6 +11,10 @@ public class PlayerActionController : MonoBehaviour
     public void TillTheSoil()
     {
         Vector3Int cellPlayerIsStandingIn = _soilMap.WorldToCell(transform.position);
-        Debug.Log("Player is in cell " + cellPlayerIsStandingIn);
+        NaturalGround groundTile = _soilMap.GetTile<NaturalGround>(cellPlayerIsStandingIn);
+        if(groundTile != null)
+        {
+            groundTile.Till(cellPlayerIsStandingIn, _soilMap);
+        }
     }
 }
