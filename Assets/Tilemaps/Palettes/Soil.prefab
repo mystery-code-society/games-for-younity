@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4641067244943346}
   - component: {fileID: 2569400266970143490}
   m_Layer: 31
-  m_Name: PlowedSoil
+  m_Name: Soil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
