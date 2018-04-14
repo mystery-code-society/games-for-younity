@@ -16,6 +16,7 @@ public class PlayerAnimationView : CardinalMovementHandler
 
     public void Till()
     {
+        _animator.SetBool(WALK_PREFIX + _lastDirection, false);
         _animator.SetTrigger(TILL_PREFIX + _lastDirection);
     }
 
