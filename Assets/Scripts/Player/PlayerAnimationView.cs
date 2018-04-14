@@ -3,6 +3,7 @@
 public class PlayerAnimationView : CardinalMovementHandler
 {
     private const string WALK_PREFIX = "Walk";
+    private const string TILL_PREFIX = "Till";
 
     [SerializeField] private Animator _animator;
     private CardinalDirection _lastDirection = CardinalDirection.South;
@@ -11,6 +12,11 @@ public class PlayerAnimationView : CardinalMovementHandler
     private void Awake()
     {
         _animator.speed = Speed;
+    }
+
+    public void Till()
+    {
+        _animator.SetTrigger(TILL_PREFIX + _lastDirection);
     }
 
     public override void HandleMovement(CardinalDirection direction, float xMovement, float yMovement)

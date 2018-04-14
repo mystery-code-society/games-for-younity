@@ -8,6 +8,7 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField] private float _movementThreshold = 0f;
     [SerializeField] private CardinalMovementHandler[] _movementHandlers;
     [SerializeField] private PlayerActionController _actionController;
+    [SerializeField] private PlayerAnimationView _animationView;
 
     private CardinalDirection _lastDirection = CardinalDirection.South;
     private bool _inputAllowed = true;
@@ -22,6 +23,7 @@ public class PlayerInputController : MonoBehaviour
                 _inputAllowed = false;
                 StartCoroutine(WaitForOverridingActionToBeDone(0.5f));
                 _actionController.TillTheSoil();
+                _animationView.Till();
             }
             else
             {
