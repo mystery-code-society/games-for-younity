@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _soilMap: {fileID: 0}
-  _feetPosition: {fileID: 4163695029841004}
+  _feet: {fileID: 4163695029841004}
 --- !u!114 &114577254102105136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -397,6 +397,7 @@ MonoBehaviour:
   _movementHandlers:
   - {fileID: 114577254102105136}
   - {fileID: 114958598789837680}
+  - {fileID: 114123224054209210}
   _actionController: {fileID: 114123224054209210}
   _animationView: {fileID: 114577254102105136}
 --- !u!114 &114958598789837680
