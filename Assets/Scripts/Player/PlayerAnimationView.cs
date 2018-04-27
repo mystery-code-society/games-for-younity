@@ -33,7 +33,7 @@ public class PlayerAnimationView : CardinalMovementHandler
                 length = animatorController.animationClips[i].length;
             }
         }
-        yield return new WaitForSeconds(length);
+        yield return new WaitForSeconds(length / _animator.speed);
         callback();
     }
 
