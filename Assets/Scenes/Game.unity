@@ -118,12 +118,6 @@ Tilemap:
   m_PrefabParentObject: {fileID: 8195094279612734202, guid: 088e930b27bb2fa4485b4179b24733c1,
     type: 2}
   m_PrefabInternal: {fileID: 2082497539}
---- !u!114 &494701044 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114123224054209210, guid: 152edb2a048280744864cbfa1af46ee0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1094366503}
-  m_Script: {fileID: 11500000, guid: e1d963a93debfae41a998414ccf5adc3, type: 3}
 --- !u!1 &716962500
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,11 +168,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114632950150022890, guid: 152edb2a048280744864cbfa1af46ee0,
-        type: 2}
-      propertyPath: _movementHandlers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4054413502169278, guid: 152edb2a048280744864cbfa1af46ee0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.217
@@ -221,16 +210,6 @@ Prefab:
       propertyPath: _soilMap
       value: 
       objectReference: {fileID: 414527116}
-    - target: {fileID: 114123224054209210, guid: 152edb2a048280744864cbfa1af46ee0,
-        type: 2}
-      propertyPath: _feet
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114632950150022890, guid: 152edb2a048280744864cbfa1af46ee0,
-        type: 2}
-      propertyPath: _movementHandlers.Array.data[2]
-      value: 
-      objectReference: {fileID: 494701044}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 152edb2a048280744864cbfa1af46ee0, type: 2}
   m_IsPrefabParent: 0

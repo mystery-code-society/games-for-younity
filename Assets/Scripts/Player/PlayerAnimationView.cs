@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerAnimationView : CardinalMovementHandler
 {
@@ -14,10 +15,26 @@ public class PlayerAnimationView : CardinalMovementHandler
         _animator.speed = Speed;
     }
 
-    public void Till()
+    public void Till(System.Action callback)
     {
         _animator.SetBool(WALK_PREFIX + _lastDirection, false);
         _animator.SetTrigger(TILL_PREFIX + _lastDirection);
+        StartCoroutine(WaitForAnimation(TILL_PREFIX + _lastDirection, callback));
+    }
+
+    private IEnumerator WaitForAnimation(string animationName, System.Action callback)
+    {
+        RuntimeAnimatorController animatorController = _animator.runtimeAnimatorController;
+        float length = 0;
+        for(int i = 0; i < animatorController.animationClips.Length; i++)
+        {
+            if(animatorController.animationClips[i].name == animationName)
+            {
+                length = animatorController.animationClips[i].length;
+            }
+        }
+        yield return new WaitForSeconds(length);
+        callback();
     }
 
     public override void HandleMovement(CardinalDirection direction, float xMovement, float yMovement)

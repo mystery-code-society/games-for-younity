@@ -21,21 +21,14 @@ public class PlayerInputController : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Space))
             {
                 _inputAllowed = false;
-                StartCoroutine(WaitForOverridingActionToBeDone(0.5f));
                 _actionController.TillTheSoil();
-                _animationView.Till();
+                _animationView.Till(() => _inputAllowed = true);
             }
             else
             {
                 HandleMovementInput();
             }
         }
-    }
-
-    private IEnumerator WaitForOverridingActionToBeDone(float actionLength)
-    {
-        yield return new WaitForSeconds(actionLength);
-        _inputAllowed = true;
     }
 
     private void HandleMovementInput()
