@@ -8,6 +8,7 @@ public class PlayerActionController : CardinalMovementHandler
 {
     [SerializeField] private Tilemap _soilMap;
     [SerializeField] private Transform _feet;
+    [SerializeField] private GameObject _tillEffect;
     private Vector3 _offset;
 
     public override void HandleMovement(CardinalDirection direction, float xMovement, float yMovement)
@@ -33,10 +34,12 @@ public class PlayerActionController : CardinalMovementHandler
 
     public void TillTheSoil()
     {
-        Vector3Int cellToTill = _soilMap.WorldToCell(_feet.position + _offset);
+        Vector3 tilledPosition = _feet.position + _offset;
+        Vector3Int cellToTill = _soilMap.WorldToCell(tilledPosition);
         NaturalGround groundTile = _soilMap.GetTile<NaturalGround>(cellToTill);
         if(groundTile != null)
         {
+            Instantiate(_tillEffect, tilledPosition + new Vector3(0f, 0f, -6f), _tillEffect.transform.rotation);
             groundTile.Till(cellToTill, _soilMap);
         }
     }
