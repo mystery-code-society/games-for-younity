@@ -36,4 +36,9 @@ public class PlayerActionController : CardinalMovementHandler
     {
         _toolbox.UseEquippedTool(_animationView, _feet.position + _offset, callback);
     }
+
+    public void EquipNextTool()
+    {
+        _toolbox.EquipNextTool();
+    }
 }

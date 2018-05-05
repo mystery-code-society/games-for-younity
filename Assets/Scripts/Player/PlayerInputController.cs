@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
+    private const string NEXT_TOOL_BUTTON = "NextTool";
     private const string HORIZONTAL_AXIS = "Horizontal";
     private const string VERTICAL_AXIS = "Vertical";
     [SerializeField] private float _movementThreshold = 0f;
@@ -18,6 +19,10 @@ public class PlayerInputController : MonoBehaviour
     {
         if(_inputAllowed)
         {
+            if(Input.GetButtonDown(NEXT_TOOL_BUTTON))
+            {
+                _actionController.EquipNextTool();
+            }
             if(Input.GetKeyDown(KeyCode.Space))
             {
                 _inputAllowed = false;
