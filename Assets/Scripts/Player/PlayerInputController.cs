@@ -21,9 +21,8 @@ public class PlayerInputController : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Space))
             {
                 _inputAllowed = false;
-                _animationView.Till(() =>
+                _actionController.UseEquippedTool(() =>
                 {
-                    _actionController.TillTheSoil();
                     _inputAllowed = true;
                 });
             }

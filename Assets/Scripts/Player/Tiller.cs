@@ -4,7 +4,6 @@ using UnityEngine.Tilemaps;
 public class Tiller : FarmTool
 {
     [SerializeField] private Tilemap _soilMap;
-    [SerializeField] private Transform _feet;
     [SerializeField] private GameObject _tillEffect;
 
     public override void UseTool(PlayerAnimationView animationView, Vector3 targetPosition, System.Action callback)

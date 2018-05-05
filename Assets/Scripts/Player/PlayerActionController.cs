@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -8,6 +7,8 @@ public class PlayerActionController : CardinalMovementHandler
 {
     [SerializeField] private Tilemap _soilMap;
     [SerializeField] private Transform _feet;
+    [SerializeField] private PlayerAnimationView _animationView;
+    [SerializeField] private PlayerToolbox _toolbox;
     private Vector3 _offset;
 
     public override void HandleMovement(CardinalDirection direction, float xMovement, float yMovement)
@@ -31,13 +32,8 @@ public class PlayerActionController : CardinalMovementHandler
         }
     }
 
-    public void TillTheSoil()
+    public void UseEquippedTool(System.Action callback)
     {
-        Vector3Int cellToTill = _soilMap.WorldToCell(_feet.position + _offset);
-        NaturalGround groundTile = _soilMap.GetTile<NaturalGround>(cellToTill);
-        if(groundTile != null)
-        {
-            groundTile.Till(cellToTill, _soilMap);
-        }
+        _toolbox.UseEquippedTool(_animationView, _feet.position + _offset, callback);
     }
 }
