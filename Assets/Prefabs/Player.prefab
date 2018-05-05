@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 114577254102105136}
   - component: {fileID: 114958598789837680}
   - component: {fileID: 114123224054209210}
+  - component: {fileID: 114337271967806032}
+  - component: {fileID: 114344636564448440}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -369,6 +371,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soilMap: {fileID: 0}
   _feet: {fileID: 4163695029841004}
+  _animationView: {fileID: 114577254102105136}
+  _toolbox: {fileID: 114337271967806032}
+--- !u!114 &114337271967806032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649025375864904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f40e365c1b80d498ed8b83481e8dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tools:
+  - {fileID: 114344636564448440}
+  _soilMap: {fileID: 0}
+--- !u!114 &114344636564448440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649025375864904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a5f311802349849812aa0e3be09a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tillEffect: {fileID: 1784358353972978, guid: 5edceb73d64de8749bd960212de51d15,
+    type: 2}
 --- !u!114 &114577254102105136
 MonoBehaviour:
   m_ObjectHideFlags: 1

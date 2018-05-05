@@ -200,12 +200,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114344636564448440, guid: 152edb2a048280744864cbfa1af46ee0,
+        type: 2}
+      propertyPath: _soilMap
+      value: 
+      objectReference: {fileID: 414527116}
     - target: {fileID: 114958598789837680, guid: 152edb2a048280744864cbfa1af46ee0,
         type: 2}
       propertyPath: WalkableArea
       value: 
       objectReference: {fileID: 1209825695}
     - target: {fileID: 114123224054209210, guid: 152edb2a048280744864cbfa1af46ee0,
+        type: 2}
+      propertyPath: _soilMap
+      value: 
+      objectReference: {fileID: 414527116}
+    - target: {fileID: 114337271967806032, guid: 152edb2a048280744864cbfa1af46ee0,
         type: 2}
       propertyPath: _soilMap
       value: 
