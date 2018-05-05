@@ -11,4 +11,9 @@ public class PlayerToolbox : MonoBehaviour
     {
         _tools[_toolIndex].UseTool(animationView, targetPosition, _soilMap, callback);
     }
+
+    public void EquipNextTool()
+    {
+        _toolIndex = (_toolIndex + 1) % _tools.Length;
+    }
 }

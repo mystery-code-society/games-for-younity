@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 114123224054209210}
   - component: {fileID: 114337271967806032}
   - component: {fileID: 114344636564448440}
+  - component: {fileID: 114915433469840138}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -386,6 +387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tools:
   - {fileID: 114344636564448440}
+  - {fileID: 114915433469840138}
   _soilMap: {fileID: 0}
 --- !u!114 &114344636564448440
 MonoBehaviour:
@@ -431,6 +433,17 @@ MonoBehaviour:
   - {fileID: 114123224054209210}
   _actionController: {fileID: 114123224054209210}
   _animationView: {fileID: 114577254102105136}
+--- !u!114 &114915433469840138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649025375864904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f315d49a98d204d95082c871aa7ba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114958598789837680
 MonoBehaviour:
   m_ObjectHideFlags: 1
