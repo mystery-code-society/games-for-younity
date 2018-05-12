@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483c98a5c6699f7478e93cf600696afb, type: 3}
-  m_Name: TilledGround
+  m_Name: SeededCorn
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300056, guid: c25aa9620414f734391a1000bb11f818, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -33,8 +33,8 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
-  MyCondition: 1
+  MyCondition: 2
   _groundAssetsOfOtherConditions:
   - {fileID: 11400000, guid: 975aca8311647a54b954a37ca1505a62, type: 2}
-  - {fileID: 11400000, guid: aca50d774315a6d42ac7d4a26d29e130, type: 2}
-  MyCrop: {fileID: 0}
+  - {fileID: 11400000, guid: 88ea13d8c46129d408d8c17ace544b0c, type: 2}
+  MyCrop: {fileID: 11400000, guid: b423bb794a0f84245a1aba2654c8f496, type: 2}
