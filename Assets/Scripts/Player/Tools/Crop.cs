@@ -4,7 +4,6 @@
 public class Crop : ScriptableObject
 {
     public Type CropType;
-    public Sprite Seed;
     public Sprite[] GrowthStages;
     public GameObject Fruit;
 

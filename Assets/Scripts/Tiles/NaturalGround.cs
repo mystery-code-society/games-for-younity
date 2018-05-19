@@ -8,7 +8,7 @@ public class NaturalGround : Tile
 {
     public Condition MyCondition;
     [SerializeField] private NaturalGround[] _groundAssetsOfOtherConditions;
-    public Crop MyCrop;
+    [SerializeField] private PlantedGround _plantedGround;
 
     public bool CanPlant
     {
@@ -26,23 +26,9 @@ public class NaturalGround : Tile
     public void Plant(Crop crop, Vector3Int coordinates, Tilemap tilemap)
     {
         Debug.Log("Being planted with " + crop.CropType + " at coordinates " + coordinates);
-        tilemap.SetTile(coordinates, GroundWithCrop(crop));
-    }
-
-    private NaturalGround GroundWithCrop(Crop targetCrop)
-    {
-        if(MyCrop != null && MyCrop == targetCrop)
-        {
-            return this;
-        }
-        for (int i = 0; i < _groundAssetsOfOtherConditions.Length; i++)
-        {
-            if (_groundAssetsOfOtherConditions[i].MyCrop == targetCrop)
-            {
-                return _groundAssetsOfOtherConditions[i];
-            }
-        }
-        throw new System.Exception("No NaturalGround Tile found with Crop " + targetCrop);
+        PlantedGround plantedGround = Instantiate(_plantedGround);
+        plantedGround.Init(crop, tilemap.GetCellCenterWorld(coordinates));
+        tilemap.SetTile(coordinates, plantedGround);
     }
 
     private NaturalGround GroundWithCondition(Condition targetCondition)

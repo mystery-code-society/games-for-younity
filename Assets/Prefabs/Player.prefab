@@ -444,6 +444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f315d49a98d204d95082c871aa7ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crop: {fileID: 11400000, guid: b423bb794a0f84245a1aba2654c8f496, type: 2}
 --- !u!114 &114958598789837680
 MonoBehaviour:
   m_ObjectHideFlags: 1

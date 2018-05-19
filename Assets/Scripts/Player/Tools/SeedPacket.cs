@@ -1,14 +1,20 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class SeedPacket : FarmTool
 {
-    public override void UseTool(PlayerAnimationView animationView, Vector3 targetPosition, Tilemap soilmap, Action callback)
+    [SerializeField] private Crop _crop;
+
+    public override void UseTool(PlayerAnimationView animationView, Vector3 targetPosition, Tilemap soilMap, Action callback)
     {
-        Debug.Log("Planting seeds!");
+        Debug.Log("Trying to plant seeds!");
+        Vector3Int cellToPlant = soilMap.WorldToCell(targetPosition);
+        NaturalGround groundTile = soilMap.GetTile<NaturalGround>(cellToPlant);
+        if(groundTile != null && groundTile.CanPlant)
+        {
+            groundTile.Plant(_crop, cellToPlant, soilMap);
+        }
         callback();
     }
 }

@@ -11,7 +11,7 @@ public class Tiller : FarmTool
         {
             Vector3Int cellToTill = soilMap.WorldToCell(targetPosition);
             NaturalGround groundTile = soilMap.GetTile<NaturalGround>(cellToTill);
-            if (groundTile != null)
+            if (groundTile != null && groundTile.MyCondition == NaturalGround.Condition.Compacted)
             {
                 Instantiate(_tillEffect, targetPosition + new Vector3(0f, 0f, -6f), _tillEffect.transform.rotation);
                 groundTile.Till(cellToTill, soilMap);

@@ -36,5 +36,5 @@ MonoBehaviour:
   MyCondition: 0
   _groundAssetsOfOtherConditions:
   - {fileID: 11400000, guid: 88ea13d8c46129d408d8c17ace544b0c, type: 2}
-  - {fileID: 11400000, guid: aca50d774315a6d42ac7d4a26d29e130, type: 2}
-  MyCrop: {fileID: 0}
+  - {fileID: 11400000, guid: 51ccc784276a38846b0bbb8873de7727, type: 2}
+  _plantedGround: {fileID: 11400000, guid: 51ccc784276a38846b0bbb8873de7727, type: 2}

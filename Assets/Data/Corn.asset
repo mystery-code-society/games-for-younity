@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Name: Corn
   m_EditorClassIdentifier: 
   CropType: 0
-  Seed: {fileID: 21300000, guid: 4e52515d9bd321141aebee0dc05e9b33, type: 3}
   GrowthStages:
+  - {fileID: 21300000, guid: 3b206e97273ca234ba247966418ba39d, type: 3}
   - {fileID: 21300000, guid: 4d7ebc291a7c63f46b114e3f6a813657, type: 3}
   - {fileID: 21300002, guid: 4d7ebc291a7c63f46b114e3f6a813657, type: 3}
   - {fileID: 21300004, guid: 4d7ebc291a7c63f46b114e3f6a813657, type: 3}
   - {fileID: 21300006, guid: 4d7ebc291a7c63f46b114e3f6a813657, type: 3}
+  - {fileID: 21300008, guid: 4d7ebc291a7c63f46b114e3f6a813657, type: 3}
   Fruit: {fileID: 1615130492194514, guid: 3818bccdb85cf254ea1568f74e11a9f3, type: 2}

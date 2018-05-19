@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 483c98a5c6699f7478e93cf600696afb, type: 3}
-  m_Name: SeededCorn
+  m_Script: {fileID: 11500000, guid: 7f60210b80b077a4390b70f46adbea4c, type: 3}
+  m_Name: PlantedGround
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300056, guid: c25aa9620414f734391a1000bb11f818, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -37,4 +37,4 @@ MonoBehaviour:
   _groundAssetsOfOtherConditions:
   - {fileID: 11400000, guid: 975aca8311647a54b954a37ca1505a62, type: 2}
   - {fileID: 11400000, guid: 88ea13d8c46129d408d8c17ace544b0c, type: 2}
-  MyCrop: {fileID: 11400000, guid: b423bb794a0f84245a1aba2654c8f496, type: 2}
+  _plantedGround: {fileID: 11400000}
